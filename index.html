@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="assets/imagenes/Escudo_Argentina.pngs" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- --------------------------------------------------- -->
+    <!-- ------------------------NAV------------------------ -->
+    <!-- --------------------------------------------------- -->
+    <header>
+
+        <nav class="navbar navbar-light bg-light">
+            <div class="btn-group" aria-label="Basic example">
+                <button type="button" class="boton btn btn-light d-flex align-items-center" title="Volver al inicio">
+                    <svg style="margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        fill="#151515" class="bi bi-house" viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                    </svg>
+                    Home
+                </button>
+
+
+                <div class="btn-group">
+                    <button type="button" class="boton btn btn-light dropdown-toggle d-flex align-items-center"
+                        data-bs-toggle="dropdown" title="Submenú de información">
+                        <svg style="margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                            fill="#151515" class="bi bi-box" viewBox="0 0 16 16">
+                            <path
+                                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                        </svg>
+                        Info
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#historia-txt" class="dropdown-item">Historia</a>
+                        <a href="#cultura-txt" class="dropdown-item">Cultura</a>
+                        <a href="#ciencia-y-tecnologia-txt" class="dropdown-item">Tecnologías</a>
+                        <a href="#paisajes-txt" class="dropdown-item">Paisajes</a>
+                        <a href="#gastronomia-txt" class="dropdown-item">Comida</a>
+                    </div>
+                </div>
+                <button type="button" class="boton btn btn-light d-flex align-items-center" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" title="Información de contacto">
+                    <svg style="margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        fill="#151515" class="bi bi-house" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                    Contact
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- --------------------------------------------------- -->
+    <!-- ---------------------OFFCANVAS--------------------- -->
+    <!-- --------------------------------------------------- -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header border border-end">
+            <h5 id="offcanvasRightLabel">Contacto</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container contenedor-formulario">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <h2>Formulario</h2>
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre y Apellido:</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje:</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-dark col-md-12">Enviar mensaje</button>
+                        </form>
+                        <br>
+                        <p style="text-align: center;">
+                            <strong>Emails</strong>
+                            <br>
+                            <a href="mailto:talarico.francoet36@gmail.com" target="_blank">talarico.francoet36@gmail.com</a>
+                            <br>
+                            <a href="mailto:esteche.gonzaloet36@gmail.com" target="_blank">esteche.gonzaloet36@gmail.com</a>
+                            <br>
+                            <br>
+                            <strong>Instagrams</strong>
+                            <br>
+                            <a href="https://instagram.com/goqla.arg" target="_blank">goqla.arg</a>
+                            <br>
+                            <a href="https://instagram.com/talaricofranco_" target="_blank">talaricofranco_</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------- -->
+    <!-- ----------------CONTENEDOR PRINCIPAL--------------- -->
+    <!-- --------------------------------------------------- -->
+    <div class="contenedor-principal">
+
+        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div id="contenedor-principal__titulo">
+                <h1>ARGENTINA</h1>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="assets/imagenes/perito.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Perito Moreno</h5>
+                        <p>Texto de información sobre la imágen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item active" data-bs-interval="1500">
+                    <img src="assets/imagenes/monte.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Monte Fitz Roy</h5>
+                        <p>Texto de información sobre la imágen.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1500">
+                    <img src="assets/imagenes/mardel.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mar del Plata</h5>
+                        <p>Texto de información sobre la imágen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                    <img src="assets/imagenes/desierto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Desierto del Diablo</h5>
+                        <p>Texto de información sobre la imágen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                    <img src="assets/imagenes/cataratas.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Puerto Madryn</h5>
+                        <p>Texto de información sobre la imágen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------- -->
+    <!-- ------------------CONTENEDOR CARDS----------------- -->
+    <!-- --------------------------------------------------- -->
+    <div class="container contenedor-cards"  style="margin-bottom: 20vh;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card cartas-principales">
+                    <div class="card-body">
+                        <a href="#historia-txt">
+                            <img src="assets/imagenes/casarosada.jpg" class="card-img-top" alt="Casa Rosada">
+                            <div class="card-body">
+                                <h5 class="card-title">Historia</h5>
+                                <p class="card-text">La historia de la Argentina es la cronología de sucesos desde el comienzo del primigenio poblamiento humano en el actual territorio de la República Argentina hasta nuestra propia actualidad. Se inicia con los vestigios más antiguos de seres humanos en suelo argentino, detectados en el extremo sur de la Patagonia, que datan de hace unos 13 000 años. Las primeras...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card cartas-principales">
+                    <div class="card-body">
+                        <a href="#cultura-txt">
+                            <img src="assets/imagenes/cultura.jpg" class="card-img-top" alt="Tango">
+                            <div class="card-body">
+                                <h5 class="card-title">Cultura</h5>
+                                <p class="card-text">La cultura de Argentina está marcada por el carácter multiétnico y multicultural de su población, el fuerte sincretismo de sus formas de expresión y una positiva valoración del progreso y la modernidad, en la que se conjugan, no sin conflictos, muchas identidades étnicas y un sentido de pertenencia a las culturas europeas y latinoamericanas, con algunos aportes asiáticos y africanos...</p>
+                            </div> 
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card cartas-principales">
+                    <div class="card-body">
+                        <a href="#gastronomia-txt">
+                            <img src="assets/imagenes/comida.jpg" class="card-img-top" alt="Empanadas">
+                            <div class="card-body">
+                                <h5 class="card-title">Gastronomía</h5>
+                                <p class="card-text">El locro, guiso típico de herencia andinael asado, tanto un método de cocción como un evento sociallas empanadas, populares en todo el país y con variantes provincialesel mate, infusión nacional preparada con yerba mateun alfajor, golosina rellena de dulce de lechela pizza argentina característica de Buenos Aires, ciudad de marcada herencia italianatradicionales tamales de maíz, típicos del noroeste...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card cartas-principales">
+                    <div class="card-body">
+                        <a href="#paisajes-txt">
+                            <img src="assets/imagenes/perito.png" class="card-img-top" alt="Perito Moreno">
+                            <div class="card-body">
+                                <h5 class="card-title">Paisajes</h5>
+                                <p class="card-text">Mira algunas de los hermosos paisajes que se llegan a desarrollar en nuestro país, en las diferentes provincias.</p>
+                            </div>    
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card cartas-principales">
+                    <div class="card-body">
+                        <a href="#ciencia-y-tecnologia-txt">
+                            <img src="assets/imagenes/planetario.jpg" class="card-img-top" alt="Planetario">
+                            <div class="card-body">
+                                <h5 class="card-title">Ciencia y Tecnología</h5>
+                                <p class="card-text">La ciencia y tecnología en Argentina constituye un conjunto de políticas, planes y programas llevados a cabo por el Estado...</p>
+                            </div> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------- -->
+    <!-- ---------------CONTENEDOR INFORMACIÓN-------------- -->
+    <!-- --------------------------------------------------- -->
+
+    <div class="container contenedor-informacion">
+        <div class="row">
+            
+            <!--Historia-->
+            <div class="row" id="contenedor-historia">
+                <div class="col-md-6 contenedor-informacion__historia" id="historia-txt">
+                    <h2 style="text-align: center;"> Historia </h2>
+                    <br>
+                    <p>La historia de la Argentina es la cronología de sucesos desde el comienzo del primigenio poblamiento humano en el actual territorio de la República Argentina hasta nuestra propia actualidad.
+
+                        Se inicia con los vestigios más antiguos de seres humanos en suelo argentino, detectados en el extremo sur de la Patagonia, que datan de hace unos 13 000 años. Las primeras civilizaciones agroalfareras se establecieron en el noroeste andino desde el siglo xviii a. C.
+                        
+                        La historia escrita de lo que es la Argentina comenzó con los registros del cronista alemán Ulrico Schmidl en la expedición de Juan Díaz de Solís en 1516 al Río de la Plata, hecho que anticipa la dominación española que se impondría en parte de esta región.
+                        
+                        En 1776 la corona española creó el Virreinato del Río de la Plata, entidad aglutinadora de territorios a partir de la cual, con la Revolución de Mayo de 1810, comenzaría un proceso gradual de formación de varios Estados autónomos llamados provincias o independientes, entre ellos el que llevó el nombre de Provincias Unidas del Río de la Plata.</p>
+                </div>
+                <div class="col-md-6 contenedor-informacion__historia">
+                    <img src="assets/imagenes/casarosada.jpg" alt="Casa Rosada" height="100%" width="100%">
+                </div>
+            </div>
+            
+            <!--Cultura-->
+            <div class="row" id="contenedor-cultura">
+                <div class="col-md-6 contenedor-informacion__cultura">
+                    <img src="assets/imagenes/cultura.jpg" alt="Casa Rosada" height="100%" width="100%">
+                </div>
+                <div class="col-md-6 contenedor-informacion__cultura" id="cultura-txt">
+                    <h2 style="text-align: center;"> Cultura </h2>
+                    <br>
+                    <p>La cultura de Argentina está marcada por el carácter multiétnico y multicultural de su población, el fuerte sincretismo de sus formas de expresión y una positiva valoración del progreso y la modernidad, en la que se conjugan, no sin conflictos, muchas identidades étnicas y un sentido de pertenencia a las culturas europeas y latinoamericanas, con algunos aportes asiáticos y africanos.
+
+                        El escritor argentino Ernesto Sabato ha reflexionado sobre la naturaleza de la cultura argentina del siguiente modo:
+                
+                        La cultura argentina tiene como origen la mezcla de otras que se encontraron durante los años de las inmigraciones. En cuanto a sus ideologías se destacan sus pensamientos y lenguajes liberales o socialdemócratas, mucho valor a la libertad, también la democracia y el respeto a los derechos humanos</p>
+                </div>
+            </div>
+            
+            <!--Gastronomía-->
+            <div class="row" id="contenedor-gastronomia">
+                <div class="col-md-6 contenedor-informacion__gastronomia" id="gastronomia-txt">
+                    <h2 style="text-align: center;"> Gastronomía </h2>
+                    <br>
+                    <p>El locro, guiso típico de herencia andinael asado, tanto un método de cocción como un evento sociallas empanadas, populares en todo el país y con variantes provincialesel mate, infusión nacional preparada con yerba mateun alfajor, golosina rellena de dulce de lechela pizza argentina característica de Buenos Aires, ciudad de marcada herencia italianatradicionales tamales de maíz, típicos del noroeste argentino y; una picada bandeja de snacks, embutidos, quesos y fiambres acompañados por vino, la bebida nacional.</p>
+                </div>
+                <div class="col-md-6 contenedor-informacion__gastronomia">
+                    <img src="assets/imagenes/comida.jpg" alt="Casa Rosada" height="100%" width="100%">
+                </div>
+            </div>
+            
+            <!--Ciencia y Tecnología-->
+            <div class="row" id="contenedor-ciencia">
+                <div class="col-md-6 col-sm-12 contenedor-informacion__ciencia-y-tecnologia" id="ciencia-y-tecnologia-txt">
+                    <h2 style="text-align: center;"> Ciencia y Tecnología </h2>
+                    <br>
+                    <p>La ciencia y tecnología en Argentina constituye un conjunto de políticas, planes y programas llevados a cabo por el Estado, las universidades e institutos nacionales, las empresas, y otros organismos y asociaciones nacionales e internacionales orientadas hacia la investigación, desarrollo e innovación en Argentina, así como las infraestructuras e instalaciones científicas y tecnológicas. El país, según datos de 2018, invierte el 0,49% de su PBI en investigación y desarrollo, siendo el 67% de esta inversión realizada por el estado.2​ Según el Índice mundial de innovación, a cargo de la Organización Mundial de la Propiedad Intelectual, en 2022, Argentina se ubicó en lugar 69 en innovación entre 132 países del mundo y el lugar 8 entre los países de la región de Latinoamérica y el Caribe;3​mientras que en 2023 ocupó el lugar 73.</p>
+                </div>
+                <div class="col-md-6 col-sm-12 contenedor-informacion__ciencia-y-tecnologia">
+                    <img src="assets/imagenes/planetario.jpg" alt="Planetario" height="100%" width="100%">
+                </div>
+            </div>
+            
+            <!--Paisajes-->
+
+            <div>
+                <div class="col-md-12 col-sm-12 contenedor-informacion__paisajes-titulo" id="paisajes-txt">
+                    <h2 style="text-align: center;"> Paisajes </h2>
+                </div>
+                <div class="col-md-12 col-sm-12 contenedor-informacion__paisajes">
+                    <div class="titulos-paisajes row"style="background-image: url(assets/imagenes/cataratas.jpeg);">
+                        <div >
+                            <h2>CATARATAS</h2>
+                            <br>
+                            <h4>Misiones</h4>
+                        </div>
+                    </div>
+                    <div class="titulos-paisajes row"style="background-image: url(assets/imagenes/desierto.jpg);">
+                        <div>
+                            <h2>DESIERTO DEL DIABLO</h2>
+                            <br>
+                            <h4>Salta</h4>
+                        </div>
+                    </div>
+                    <div class="titulos-paisajes row"style="background-image: url(assets/imagenes/mardel.jpg);">
+                        <div>
+                            <h2>MAR DEL PLATA</h2>
+                            <br>
+                            <h4>Buenos Aires</h4>
+                        </div>
+                    </div>
+                    <div class="titulos-paisajes row"style="background-image: url(assets/imagenes/monte.jpg);">
+                        <div>
+                            <h2>MONTE FITZ ROY</h2>
+                            <br>
+                            <h4>Santa Cruz</h4>
+                        </div>
+                    </div>
+                    <div class="titulos-paisajes row"style="background-image: url(assets/imagenes/perito.png);">
+                        <div>
+                            <h2>PERITO MORENO</h2>
+                            <br>
+                            <h4>Santa Cruz</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <div id="footer-titulo">
+                <h1> ARGENTINA </h1>
+            </div>
+            <div id="footer-informacion">
+                <div>
+                    <img src="assets/imagenes/Escudo_Argentina.png" alt="Escudo de la República Argentina">
+                    <h2>ARGENTINA</h2>
+                    <p>© Copyright 2023</p>
+                </div>
+                <div>
+                    <h2>Integrantes:</h2>
+                    <br>
+                    <strong><p>Franco Salvador Talarico <br>Gonzalo Nahuel Esteche</p></strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
